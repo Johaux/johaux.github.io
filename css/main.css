@@ -1,428 +1,190 @@
-body {
-  background-image:url(http://www.michelacosta.com/utilidades/texturas/14.png);
-  background-repeat:repeat;
-  width:100%;
-  height:100%;
+h1{font-size: 42px; }
+h2{font-size: 36px; }
+h3{font-size: 32px; }
+h4{font-size: 28px; }
+h5{font-size: 22px; }
+
+h3 span {color: #00b0f0;}
+p{font-size: 16px;}
+
+#resumen, #experiencia, #portafolio, #contacto
+{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  over-flow: hidden;
 }
 
-.gradiente {
-	position:absolute;
-  width:100%;
-  height:100%;
-  background:linear-gradient(to bottom, #FFF, #588C7E);
-  z-index:-3;
-  opacity:0.6;
-}
-
-#menu, body {
-  margin:0;
-  padding:0;
-}
-
-li > span {
-  font-family: monospace;
-  font-size: 1.7vw;
-}
-
-.placeholder {
-  width:100%;
-  height:auto;
-}
-
-#menu > li {
-  float:left;
-  list-style:none;
-  width:20%;
-  text-align:center;
-  margin:0px;
-  font-family:'Lobster',cursive;
-  padding:0;
-  cursor:default;
-  box-shadow:inset 0 0 1px #333;
-  z-index:0;
-}
-
-#menu > li > p {
-  font-size:2.3vw;
-  color:#fff;
-}
-
-.contenido > h1 {
-	margin:2% 0 3% 3%;
-  padding:0;
-  font-weight:lighter;
-  font-size:3.8vw;
-  color:#fff;
-  text-shadow:0px 0px 6px #444;
-}
-
-li {
-  margin:15px 0;
-}
-
-.col50 {
-  float:left;
-  width:40%;
-  padding:0 5%;
-}
-
-.fake-progress-bar {
-  width:100%;
-  box-shadow:inset 0 0 2px #A95810;
-  border-radius:10px;
-}
-
-.fake-progress-bar > div {
-  background-color:#D96459;
-  border-radius:10px;
-}
-
-.concept {
-	font-size:1.8vw;
-  float:left;
-  padding:5px;
-}
-
-.value {
-	font-size:1.8vw;
-  float:right;
-  padding:5px;
-}
-
-.contenido > ul {
-  margin-left:10%;
-}
-
-.contenido li {
-	font-family:'Raleway',sans-serif;
-  font-size:2.2vw;
-  padding:0 20px 0 0;
-  color:#fff;
-  text-shadow:0px 0px 6px #000;
-}
-
-a {
+#portada
+{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  height: 400px;
+  background:
+    radial-gradient(rgba(64, 64, 64, 0.8),
+    rgba(0, 0, 0, 0.9)) 0% 0% / cover scroll,
+    url("http://www.reservamehoy.com/anayarojo/portada.jpg") 50% 0%
+    no-repeat fixed;
+  background-size: cover;
   color: #fff;
-  transition:all 0.3s ease-out;
+  text-align: center;
 }
 
-a:hover {
-  color:#EDDA6D;
-  transition:all 0.3s ease-out;
+#portada h3 {color: rgb(200,200,200);}
+#resumen{background: #f1f1f1; }
+#experiencia{}
+#portafolio{background: #f1f1f1; }
+
+#resumen hr,
+#portafolio hr {border-color: #ddd;}
+
+.portafolio-container{padding: 6px;}
+.portafolio-item{background: #fff; height: 400px; padding: 16px; border-radius: 4px;}
+
+.redes i{font-size: 30px; line-height: 50px; width: 50px; height: 50px; background: rgb(153,153,153); border-radius: 50%; margin: 5px;}
+
+.redes i:hover{background: #00b0f0; }
+
+.front {background: #fff; width: 100%; border-radius: 4px;}
+.front article i {width: 100%; font-size: 80px; text-align: center; color: #f1f1f1;}
+
+#contacto{}
+
+textarea
+{
+  resize: vertical;
 }
 
-#menu > li .contenido {
-	width:100%;
-  height:0px;
-  position:absolute;
-  overflow:hidden;
-  left:0px;
-  top:0;
-  text-align:justify;
-  padding:0px;
-  z-index:-2;
-  transition:height 0.8s ease-in;
+.control-label{text-align: left !important;}
+
+/*  -------------    IMAGENES  -------------  */
+
+.img-reservame{
+  background-image: url("http://www.reservamehoy.com/anayarojo/Registro.png");
+  background-size: cover;
+  width: 100%;
+  height: 250px;
 }
 
-#menu > li:hover {
-  box-shadow:none;
+
+/*  -------------    EFECTO FLIPPER  -------------  */
+
+.flip
+{
+
 }
 
-#menu > li:hover .contenido {
-  height:100%;
-  z-index:-1;
-  transition:height 0.8s ease-out;
+.flip-container
+{
+   position: relative;
 }
 
-.reset {
-  clear:both;
+.flip-container, .front, .back {
+    height: 380px;
 }
 
-input[type=text], input[type=email], textarea {
-  display:block;
-  width:80%;
-  margin-left:10%;
-  padding:10px;
-  margin-bottom:15px;
-  border-radius:5px;
-  border:0;
-  box-shadow: inset 0 0 2px #444;
-  font-family:'Raleway', sans-serif;
-  font-size:1.5vw;
+.flip-container {
+   margin-top: 15px;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+
+  /* Compatibilidad Firefox -IE */
+  -moz-transform-style: preserve-3d;
+  -moz-transform: perspective(1000px);
+  -ms-transform-style: preserve-3d;
+  -ms-transform: perspective(1000px);
 }
 
-input[type=submit] {
-	position:relative;
-  display:block-inline;
-  padding:10px;
-  width:20%;
-  left:50%;
-  border-radius:5px;
-  border:0;
-  font-family:'Raleway', sans-serif;
-  font-size:1.5vw;
-  margin-left:-10%;
-  background-color:#3F1F1F;
-  color:#fff;
-  cursor:pointer;
-}
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
 
-input[type=submit]:hover {
-	background-color:#2F0F0F;
-}
+  -moz-transition: 0.6s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
 
-textarea{
-  resize: none;
-}
+  -ms-transition: 0.6s;
+  -ms-transform-style: preserve-3d;
 
-/* Colores */
-
-#li1 {
-  background:linear-gradient(to bottom, #263C36, #588C7E);
-}
-
-#li1 .contenido {
-	background-color: #588C7E;
-}
-
-#li1 p {
-  color:#C8DDD8;
-}
-
-#li2 {
-  background:linear-gradient(to bottom, #8C7A11, #EDDA6D);
-}
-
-#li2 .contenido  {
-  background-color:#EDDA6D;
-}
-
-#li2 p {
-  color:#FFF;
-}
-
-#li3 {
-  background:linear-gradient(to bottom, #A95810, #F2AE72);
-}
-
-#li3 .contenido {
-  background-color:#F2AE72;
-}
-
-#li3 p {
-  color:#FCE6D1;
-}
-
-#li4 {
-  background:linear-gradient(to bottom, #8E2820, #D96459);
-}
-
-#li4 .contenido {
-  background-color:#D96459;
-}
-
-#li4 p {
-  color:#F4D3D0;
-}
-
-#li5 {
-  background:linear-gradient(to bottom, #3F1F1F, #8C4646);
-}
-
-#li5 .contenido {
-  background-color:#8C4646;
-}
-
-#li5 p {
-  color:#E1C4C4;
-}
-
-/* Medidas de las fake-progress-bars */
-
-.bar90 {
-  width:90%;
-}
-
-.bar80 {
-  width:80%;
-}
-
-.bar70 {
-  width:70%;
-}
-
-.bar50 {
-  width:50%;
-}
-
-.bar40 {
-  width:40%;
-}
-
-/* Portafolio 3D */
-
-#espacio {
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
-}
-
-#hexa, #hexa .cara{
-  width: 400px;
-  height: 300px;
-}
-
-.cara {
-  cursor:pointer;
-}
-
-#hexa {
+  transition: 0.6s;
   transform-style: preserve-3d;
-  transform-origin: 50% 50% -300px;
-  animation: girar 20s infinite linear running;
-  margin: 60px auto;
+
+  position: relative;
 }
 
-#hexa:hover {
-  animation-play-state: paused;
-}
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 
-#hexa .cara {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+
+  -ms-transition: 0.6s;
+  -ms-transform-style: preserve-3d;
+
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
   position: absolute;
-  border: 0;
-  opacity: 1;
-  box-shadow:0 0 10px #000;
+  top: 0;
+  left: 0;
 }
 
-/* Montesano */
-#hexa .cara:nth-child(1) {
-  background-image:url(http://www.michelacosta.com/proyectos/400x300/montesano.jpg);
-  background-size:cover;
+.front {
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
 }
 
-/* Canarias En Forma */
-#hexa .cara:nth-child(2) {
-  background-image:url(http://www.michelacosta.com/proyectos/400x300/cef.jpg);
-  transform-origin: 100% 0%;
-  transform: translateX(-407px) rotateY(-60deg);
+.back {
+   -webkit-transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+       -ms-transform: rotateY(-180deg);
+           transform: rotateY(-180deg);
+
+  height: 100% !important;
+  display: block;
 }
 
-/* Buenavista Golf */
-#hexa .cara:nth-child(3) {
-  background-image:url(http://www.michelacosta.com/proyectos/400x300/buenavista.jpg);
-  transform-origin: 0% 0%;
-  transform: translateX(407px) rotateY(60deg);
+.back p {
+   height: 100% !important;
 }
 
-/* Los Compadres */
-#hexa .cara:nth-child(4) {
-  background-image:url(http://www.michelacosta.com/proyectos/400x300/compadres.jpg);
-  transform: translateZ(-700px) rotateY(180deg);
+.flip-container.rotate .front {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-/* La Cuadra de San Diego */
-#hexa .cara:nth-child(5) {
-  background-image:url(http://www.michelacosta.com/proyectos/400x300/cuadra.jpg);
-  transform-origin: 100% 0%;
-  transform: translateZ(-700px) translateX(-400px) rotateY(240deg) translateX(405px);
+.flip-container.rotate .back {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
-/* Mare Naturadventures */
-#hexa .cara:nth-child(6) {
-  background-image:url(http://www.michelacosta.com/proyectos/400x300/mare.jpg);
-  transform-origin: 0% 0%;  transform: translateZ(-700px)  translateX(400px) rotateY(120deg) translateX(-405px);
+/* ----- Override ----- */
+
+.btn-primary {
+    color: #fff;
+    background-color: #00b0f0;
+    border-color: #00b0f0;
 }
 
-@keyframes girar {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
+.btn-primary:hover, .btn-primary:focus,
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(25,195,255);
+    border-color: rgb(25,195,255);
 }
 
-.cara > div {
-  position:absolute;
-  bottom:-50px;
-  width:100%;
-  text-align:center;
-  font-size:2.2vw;
-  text-shadow:0px 0px 6px #444;
-  font-family:'Raleway',sans-serif;
-}
-
-.cara a:hover {
-  color:#588C7E;
-  text-shadow:none;
-  transition:all 0.3s ease-out;
-}
-
-/* Tablet */
-@media screen and (max-width:1024px) {
-  #menu>li>p>span {
-    display:none;
-  }
-  #menu>li>p {
-    font-size:5vw;
-  }
-  .contenido h1 {
-    padding-top:5vw;
-  }
-}
-
-@media screen and (max-width:640px) {
-  .contenido h1 {
-    font-size:6vw;
-  }
-  .fa-ul li span {
-    display:block;
-    font-size:2.5vw;
-  }
-  .fa-ul li {
-    font-size:3.5vw;
-    text-align:left;
-  }
-  .col50 {
-    float:none;
-    width:90%;
-  }
-  .contenido {
-    overflow:auto!important;
-  }
-  input[type="text"], input[type="email"], textarea {
-    width:80%;
-    font-size:3vw;
-  }
-  input[type="submit"] {
-    font-size:3vw;
-  }
-  .concept, .value {
-    font-size:3vw;
-  }
-
-  #hexa {
-    width: 100%;
-  }
-
-  .cara {
-    position:relative!important;
-    display:block!important;
-    transform:none!important;
-    margin:auto;
-    width:90vw!important;
-    height:75vw!important;
-    max-width:400px!important;
-    max-height:300px!important;
-    background-size:100%!important;
-    background-repeat:no-repeat;
-    box-shadow:none!important;
-  }
-
-  .cara > div {
-    display:none;
-  }
-
-  #hexa {
-    animation: none;
-  }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #00b0f0;
 }
