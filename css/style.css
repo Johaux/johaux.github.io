@@ -505,7 +505,7 @@ p {
 
 /*----------------------------------------- 6) Hero --------------------------------------------------*/
 #home {
-  background: url('../images/hero1.jpeg');
+  background: url('../images/teclado.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -687,7 +687,7 @@ ul.portfolio-image li .desc{
   font-family: 'Glyphter';
   font-size: 30px;
   line-height: 20px;
-  color: #818181;
+  color: 818181;
   margin: 0;
 }
 .head-sm {
@@ -1182,7 +1182,6 @@ ul.portfolio-image li .desc{
 
 .facebook{
   background: #969696;
-  /*padding: 20px 0;*/
 }
 .facebook a:after{
   background-color: #527bbb;
