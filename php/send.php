@@ -1,9 +1,9 @@
 <?php
 
   $destiny = "johangonzalezpo@gmail.com";
-  $name = $_Post["name"];
-  $mail = $_Post["mail"];
-  $message = $_Post["txtMessage"];
+  $name = $_post["name"];
+  $mail = $_post["mail"];
+  $message = $_post["txtMessage"];
 
   $content = "Nombre: " .  $name . "\nMail: " . $mail . "\nMensaje" . $message;
 
