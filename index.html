@@ -667,9 +667,12 @@
 
               </div>
               <div class="col-md-9 content-right">
-                <form action="php/send.php" method="post">
+                <form action="mailto:johangonzalezpo@gmail.com?Subject=Hola%20Johaux%20requiero%20de%20sus%20servicios" method="post" enctype="text/plain">
                   <div class="group">
                     <input required="" type="text" name="name"><span class="highlight"></span><span class="bar"></span><label>Nombre</label>
+                  </div>
+                  <div class="group">
+                    <input type="tel" name="tel"><span class="highlight"></span><span class="bar"></span><label>Celular</label>
                   </div>
                   <div class="group">
                     <input required="" type="email" name="mail"><span class="highlight"></span><span class="bar"></span><label>E-mail</label>
@@ -677,7 +680,7 @@
                   <div class="group">
                     <textarea required="" name="message"></textarea><span class="highlight"></span><span class="bar"></span><label>Mensaje</label>
                   </div>
-                  <input id="sendMessage" name="sendMessage" type="submit" value="Enviar Mensaje">
+                  <input id="sendMessage" type="submit" value="Enviar Mensaje">
                 </form>
               </div>
             </div>
