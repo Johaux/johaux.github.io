@@ -671,14 +671,14 @@ ul.portfolio-image li .image-bg {
 ul.portfolio-image li .desc{
   position: absolute;
   z-index: 1;
-  top: 45%;
+  top: 30%;
   left: 0;
   display: table-cell;
   right: 0;
   text-align: center;
   color: #2f2f2f;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 
